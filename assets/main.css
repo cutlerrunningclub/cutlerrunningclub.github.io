@@ -1,0 +1,48 @@
+html {
+  background-color: maroon;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: auto;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+header, footer {
+  background-color: maroon;
+  color: white;
+  min-height: 57px;
+}
+
+body[data-language="CN"] [data-language="EN"] {
+  display: none;
+}
+
+body[data-language="EN"] [data-language="CN"] {
+  display: none;
+}
+
+.form-check-input:checked {
+  background-color: red;
+  border-color: red;
+}
+
+.form-check-input, .form-check-input:focus {
+  border-color: red;
+  box-shadow: unset;
+}
+
+.form-switch .form-check-input, .form-switch .form-check-input:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ff0000'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:checked:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e");
+}
